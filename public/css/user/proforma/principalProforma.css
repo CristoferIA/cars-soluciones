@@ -1,0 +1,255 @@
+.principal-proforma {
+    width: 100%;
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header-proforma {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+
+.header-proforma>div:nth-child(1) {
+    width: 100%;
+    max-width: 180px;
+}
+
+.header-proforma__label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+}
+
+.header-proforma>section {
+    display: flex;
+    gap: 1rem;
+}
+
+#nro-cotizacion {
+    text-align: right;
+}
+
+
+
+.proforma-main {
+    /* background-color: azure;*/
+    width: 100%;
+    overflow: auto;
+}
+
+.proforma-main>table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: rgb(204, 204, 204);
+}
+
+.proforma-main>table>thead>tr>th {
+    padding: 5px 5px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-size: 0.9rem;
+
+}
+
+.proforma-main>table>thead>tr>th:nth-child(2) {
+    min-width: 200px;
+}
+
+.proforma-main>table>thead>tr>th:nth-child(3) {
+    min-width: 70px;
+}
+
+.proforma-main>table>thead>tr>th:nth-child(4) {
+    min-width: 110px;
+}
+
+.proforma-main>table>thead>tr>th:nth-child(5) {
+    min-width: 100px;
+}
+
+.proforma-main>table>tbody>tr>td {
+    padding: 5px;
+    color: rgb(54, 54, 54);
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(3) input {
+    text-align: center;
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(4) input {
+    text-align: end;
+}
+
+.proforma-main>table>tbody>tr:nth-child(2n) {
+    background-color: rgb(245, 245, 245);
+}
+
+.proforma-main>table>tbody>tr:hover {
+    background-color: rgb(237, 237, 237);
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(1) {
+    text-align: center;
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(2) {
+    text-align: start;
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(3),
+.proforma-main>table>tbody>tr>td:nth-child(4),
+.proforma-main>table>tbody>tr>td:nth-child(5) {
+    text-align: end;
+    max-width: 80px;
+
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(4)>div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(5)>div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(6) {
+    text-align: end;
+}
+
+.proforma-main>table>tbody>tr>td:nth-child(6)>button {
+    color: red;
+    background-color: rgb(207, 207, 207);
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.proforma-main>table>tfoot>tr>td {
+    /* background-color: rgb(239, 239, 239);*/
+    /* padding: 1px 5px;*/
+    border-color: white;
+    text-align: right;
+
+}
+
+.proforma-main>table>tfoot>tr>td:nth-child(2) {
+    width: 120px;
+    padding-top: 0.1rem;
+}
+
+.proforma-main>table>tfoot>tr>td:nth-child(2)>input {
+    text-align: end;
+    margin-top: 0rem;
+}
+
+#addIgv {
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+.proforma-footer {
+    display: flex;
+    gap: 1rem;
+}
+
+.proforma-footer>section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+
+}
+
+.proforma-footer__opciones {
+    max-width: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid rgb(182, 182, 182);
+    justify-content: center;
+}
+
+.proforma__opciones {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.proforma__opciones>label,
+.proforma__opciones>input[type='radio'] {
+    cursor: pointer;
+}
+
+.proforma__opciones>label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+}
+
+
+.proforma__descripcion-adelanto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    max-width: 450px;
+}
+
+.proforma__monto-adelanto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    max-width: 200px;
+}
+
+.proforma__descripcion-adelanto>label,
+.proforma__monto-adelanto>label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+}
+
+.proforma__monto-adelanto>div {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.cuentas-bancarias {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border: 1px solid rgb(185, 185, 185);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: rgb(50, 50, 50);
+}
+
+
+.proforma__btn-enviar {
+    text-align: center;
+}
+
+#tipo_cambio {
+    text-align: end;
+}
